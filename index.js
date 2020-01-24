@@ -288,7 +288,7 @@ Slideout.prototype._initTouchEvents = function () {
     }
 
     const dif_x = eve.touches[0].clientX - self._startOffsetX;
-    const translateX = self._currentOffsetX = dif_x;
+    var translateX = self._currentOffsetX = dif_x;
 
     if (Math.abs(translateX) > self._padding) {
       return;
